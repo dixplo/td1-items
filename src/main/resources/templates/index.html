@@ -1,0 +1,11 @@
+{{> header}}
+<div class="ui red icon button"><i class="ui {{icons}} icon"></i>Bouton {{nom}}</div>
+<div class="ui orange icon button"><i class="ui {{icons}} icon"></i>Bouton rouge</div>
+<div class="ui blue icon button"><i class="ui {{icons}} icon"></i>Bouton Vert</div>
+<div class="ui black icon button"><i class="ui {{icons}} icon"></i>Bouton Jaune</div>
+{{> footer}}
+<script>
+$(document).ready(function(){
+	$('.ui.button').click(function(){$(this).toggleClass('orange');});
+});
+</script>
