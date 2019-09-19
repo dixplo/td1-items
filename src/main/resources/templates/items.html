@@ -2,8 +2,16 @@
 <a href="/items/new" class="ui black icon button">
 	<i class="ui plus icon"></i>Ajouter item
 </a>
+<div class="ui relaxed divided list">
+{{#items}}
+	<div class="item">{{nom}} <span class="ui green label">{{evaluation}}</span>
+	<a class="ui mini icon button" href="/items/inc/{{nom}}">
+		<i class="plus icon"></i>
+	</a>
+	<a class="ui mini icon button" href="/items/dec/{{nom}}">
+		<i class="minus icon"></i>
+	</a>
+	</div>
+{{/items}}
+</div>
 {{> footer}}
-<script>
-$(document).ready(function(){
-});
-</script>

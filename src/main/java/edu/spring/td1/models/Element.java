@@ -30,5 +30,14 @@ public class Element {
 	public void setEvaluation(int evaluation) {
 		this.evaluation = evaluation;
 	}
+	public void inc() {
+		evaluation++;
+		
+	}
+	
+	public void dec() {
+		evaluation--;
+		
+	}
 	
 }
